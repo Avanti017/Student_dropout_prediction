@@ -238,57 +238,34 @@ else:
     international = 0
 
 
+# Curricular Units (credited/taken) first semester
+# curricular_units_first_sem_credited = st.number_input("Enter number of curricular units credited", min_value=0, step=1, format="%d", help="Number of courses credited from previous work or experience (so the student didn’t have to take them again)")
+
+
+
+#     curricular_units_first_sem_credited,
+#     curricular_units_first_sem_enrolled,
+#     curricular_units_first_sem_eval,
+#     curricular_units_first_sem_approved,
+#     curricular_units_first_sem_grade,
+#     curricular_units_first_sem_no_eval,
+#     curricular_units_second_sem_credited,
+#     curricular_units_second_sem_enrolled,
+#     curricular_units_second_sem_eval,
+#     curricular_units_second_sem_approved,
+#     curricular_units_second_sem_grade,
+#     curricular_units_second_sem_no_eval,
+#     unemployment_rate,
+#     inflation_rate,
+#     gdp
+
+
+
+
+
 if st.button('Predict Dropout'):
 
    result = rfc1.predict(x_new)
    st.title("Prediction by model " + str(result))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-result = rfc1.predict(x_new)
 # print("Result: ", result)
