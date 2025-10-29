@@ -240,6 +240,7 @@ else:
 
 # Curricular Units (credited/taken) first semester
 # curricular_units_first_sem_credited = st.number_input("Enter number of curricular units credited", min_value=0, step=1, format="%d", help="Number of courses credited from previous work or experience (so the student didn’t have to take them again)")
+st.write("Hello does this even work?")
 
 
 
