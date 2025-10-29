@@ -239,15 +239,22 @@ else:
 
 
 # Curricular Units (credited/taken) first semester
-# curricular_units_first_sem_credited = st.number_input("Enter number of curricular units credited", min_value=0, step=1, format="%d", help="Number of courses credited from previous work or experience (so the student didn’t have to take them again)")
-st.write("Hello does this even work?")
+curricular_units_first_sem_credited = st.number_input("Enter number of curricular units credited in the first semester", min_value=0, step=1, format="%d", help="Number of courses credited from previous work or experience (so the student didn’t have to take them again)")
+
+# Curricular Units enrolled first semester
+curricular_units_first_sem_enrolled = st.number_input("Enter number of curricular units enrolled in the first semester", min_value=0, step=1, format="%d", help="Number of courses student has registered for in first semester")
+
+# Curricular Units first semester evaluations
+curricular_units_first_sem_eval = st.number_input("Enter number of evaluations the student has taken in the first semester", min_value=0, step=1, format="%d")
+
+# Curricular Units first semester approved
+curricular_units_first_sem_approved = st.number_input("Enter number of curricular units passed in the first semester", min_value=0, step=1, format="%d", help="Classes passed")
+
+# Curricular Units first semester grade
+grade = st.slider("Enter number of curricular units passed in the first semester", 0,100,0, help="Classes passed")
+curricular_units_first_sem_grade = 20 * grade/100
 
 
-
-#     curricular_units_first_sem_credited,
-#     curricular_units_first_sem_enrolled,
-#     curricular_units_first_sem_eval,
-#     curricular_units_first_sem_approved,
 #     curricular_units_first_sem_grade,
 #     curricular_units_first_sem_no_eval,
 #     curricular_units_second_sem_credited,
