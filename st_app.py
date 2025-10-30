@@ -72,7 +72,7 @@ st.markdown("""
 
 <!-- Use the font for the heading -->
 <h1 style="font-family: 'Fredericka the Great', serif; font-weight:500; font-style:normal; color: #235789;">
-    Edura AI
+    Endura AI
 </h1>
 """, unsafe_allow_html=True)
 
@@ -100,8 +100,8 @@ st.markdown("""
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 
 <!-- Use the font for the heading -->
-<h4 style="font-family: 'Fredericka the Great', serif; font-weight:570; font-style:normal; color: #c45714;">
-    Continue to Endura Predict:
+<h4 style="font-family: 'Fredericka the Great', serif; font-weight:599; font-style:normal; color: #c45714;">
+    Continue to Endura Dropout Risk Predict:
 </h4>
 """, unsafe_allow_html=True)
 
@@ -357,3 +357,33 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+st.markdown("""
+<!-- Load Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+<!-- Use the font for the heading -->
+<h3 style="font-family: 'Fredericka the Great', serif; font-weight:500; font-style:normal; color: #c45714;">
+    Resources for those at risk of dropout: 
+</h3>
+""", unsafe_allow_html=True)
+
+resources = [
+    ("Dropout prevention and alternatives for at‑risk college students",
+     "https://www.watermarkinsights.com/resources/blog/dropout-prevention-and-alternatives-for-at-risk-college-students/"),
+    ("Dropout Prevention and Intervention — NC DPI",
+     "https://www.dpi.nc.gov/students-families/student-support/dropout-prevention-and-intervention"),
+    ("National Dropout Prevention Center",
+     "https://dropoutprevention.org/"),
+    ("15 Effective Strategies for Improving Student Attendance and Reducing Dropout (PDF)",
+     "https://web.ped.nm.gov/wp-content/uploads/2025/01/Dropout-Prevention-Technical-Assistance-Guidance.pdf"),
+    ("The Impacts of Dropout Prevention Programs — Mathematica",
+     "https://www.mathematica.org/projects/the-impacts-of-dropout-prevention-programs"),
+    ("Reframing School Dropout as a Public Health Issue",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC2099272/"),
+]
+
+for title, url in resources:
+    st.write(f"- [{title}]({url})")
