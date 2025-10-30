@@ -340,7 +340,7 @@ x_new = pd.DataFrame([[
 if st.button('Predict Dropout'):
 
    prob = rfc1.predict_proba(x_new)
-   dropout_prob = prob[0][1]
+   dropout_prob = prob[0][0]
    st.subheader("Risk of dropout is: " + str(dropout_prob*100)+ "%")
 
 
